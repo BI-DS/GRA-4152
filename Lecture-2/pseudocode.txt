@@ -1,0 +1,10 @@
+Gather input from the user:
+  New car cost
+  Km per year
+  Estimated gas price
+  Fuel efficiency in Km/L
+  Resale value after 5 years
+
+Compute the total cost as New car cost - Resale value + num_years *  Km per year / fuel efficiency * gas price
+
+Display the result
