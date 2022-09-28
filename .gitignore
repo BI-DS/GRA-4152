@@ -4,3 +4,4 @@ uml_diagrams
 Lecture-1/*.pdf
 Others/
 */__pycache__
+*.log
