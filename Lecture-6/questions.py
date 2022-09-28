@@ -23,6 +23,12 @@ class Question :
    def setAnswer(self, correctResponse) :
       self._answer = correctResponse
 
+   ## Gets correct answer for this question.
+   #  @return correct answer
+   #
+   def getAnswer(self):
+       return self._answer
+
    ## Checks a given response for correctness.
    #  @param response the response to check
    #  @return True if the response was correct, False otherwise
