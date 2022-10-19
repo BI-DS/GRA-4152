@@ -6,3 +6,5 @@ Others/
 */__pycache__
 *.log
 Project
+Lecture-9/approx_pi.py
+Lecture-9/mlp.py
