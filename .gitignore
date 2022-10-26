@@ -6,5 +6,9 @@ Others/
 */__pycache__
 *.log
 Project
-Lecture-9/approx_pi.py
 Lecture-9/mlp.py
+Lecture-9/approx_pi.py
+Lecture-10/average_solution.py
+Lecture-10/get_ratios_solution.py
+Lecture-10/list_solution.py
+Lecture-10/primes_solution.py
