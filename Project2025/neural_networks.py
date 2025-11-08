@@ -31,7 +31,7 @@ log_var = out[:,latent_dim:]
 std = tf.math.exp(0.5*log_var)
 
 output_dim  = 28*28
-# Bernoulli Decoder for B&W images
+# Gaussian Decoder for B&W images
 decoder_mlp = Sequential(
                         [
                         layers.InputLayer(input_shape=latent_dim),
