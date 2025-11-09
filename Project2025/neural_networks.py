@@ -40,6 +40,11 @@ decoder_mlp = Sequential(
                         ]
                         )
 mu = decoder_mlp(z)
+# we dont need to learn sigma as it is challenging
+# nstead we assume the value below
+std = 0.75
+eps = tf.random.normal(mu.shape)
+x = mu + eps*std
 
 """
 Encoder and decoder networks for the color MNIST images. 
@@ -96,8 +101,8 @@ decoder_conv = Sequential(
                         ]
                         )
 mu = decoder_conv(z)
-# we dont need to learn sigma for this data as it is challenging
-# we assume the value below
+# we dont need to learn sigma as it is challenging
+# instead we assume the value below
 std = 0.75
 eps = tf.random.normal(mu.shape)
 x = mu + eps*std
