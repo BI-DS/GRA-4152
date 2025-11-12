@@ -1,5 +1,10 @@
 import tensorflow as tf
 
+# XXX Note that your data has been normalized between [0 1], so before you plot
+# the gird of images you need to scale the output of the decoder (x_hat) to the
+# range [0 255] and change the dtype to unit 8. Just use this function
+img = tf.clip_by_value(255*x_hat, clip_value_min=0, clip_value_max=255).numpy().astype(np.uint8)
+
 # Adam optimizer is my default choice 
 optimizer = tf.keras.optimizers.Adam(learning_rate=1e-4) 
 
