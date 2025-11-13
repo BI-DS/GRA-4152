@@ -10,6 +10,8 @@ pip install matplotlib
 ```
 which are the only extra libraries that you need in this project.
 
+**Note:** if your laptop doesnt have `wget`, you can install it in your `tf` environment as follows `conda install -c menpo wget`. Then you should use `subprocess.run()` in your python script to download the data sets.
+
 Read carfully the 3 files in this folder: `losses.py`, `neural_networks.py` and `utils.py`. 
 
 * `losses.py` provides the formulas to calculate the Kullback-Leibler divergence and the log density of a multivariate Gaussian distribution with diagonal covariance matrix. All input parameters in the functions are simply the outputs of the encoder and decoder networks, and `x` is simply the mini-batch of data used during training. 
