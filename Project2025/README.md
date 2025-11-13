@@ -10,7 +10,7 @@ pip install matplotlib
 ```
 which are the only extra libraries that you need in this project.
 
-**Note:** if your laptop doesnt have `wget`, you can install it in your `tf` environment as follows `conda install -c menpo wget`. Then you should use `subprocess.run()` in your python script to download the data sets.
+**Note:** if your laptop doesnt have `wget`, you can install it in your `tf` environment as follows `conda install -c menpo wget`. Then you should use `subprocess.run()` in your python script, together with `wget`, to download the data sets.
 
 Read carfully the 3 files in this folder: `losses.py`, `neural_networks.py` and `utils.py`. 
 
